@@ -14,7 +14,7 @@ public class CarHandler : MonoBehaviour
     private float accelerationMultipler = 3f;
     private float breakMultipler = 15f;
     private float steeringMultiplier = 5f;
-    private float maxForwardVelocity = 30f;
+    private float maxForwardVelocity = 15f;
     
     Vector2 input = Vector2.zero;
     

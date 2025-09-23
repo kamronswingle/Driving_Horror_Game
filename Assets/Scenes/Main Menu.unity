@@ -1635,7 +1635,7 @@ MonoBehaviour:
   onValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 873445303}
+      - m_Target: {fileID: 1144737144}
         m_TargetAssemblyTypeName: SettingsConfig, Assembly-CSharp
         m_MethodName: SetFullscreen
         m_Mode: 0
@@ -2048,7 +2048,6 @@ GameObject:
   - component: {fileID: 873445301}
   - component: {fileID: 873445300}
   - component: {fileID: 873445302}
-  - component: {fileID: 873445303}
   m_Layer: 5
   m_Name: SettingsPanel
   m_TagString: Untagged
@@ -2135,20 +2134,6 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
---- !u!114 &873445303
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 873445298}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 793da87344c18488aadae387bd51ede0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::SettingsConfig
-  audioMixer: {fileID: 24100000, guid: bb90c40dd90394aa29e7eabcdc92ccfd, type: 2}
-  resolutionDropdown: {fileID: 1102333418}
 --- !u!1 &880682882
 GameObject:
   m_ObjectHideFlags: 0
@@ -2906,7 +2891,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 873445303}
+      - m_Target: {fileID: 1144737144}
         m_TargetAssemblyTypeName: SettingsConfig, Assembly-CSharp
         m_MethodName: SetResolution
         m_Mode: 0
@@ -3169,6 +3154,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1117158351}
   m_CullTransparentMesh: 1
+--- !u!1 &1144737143
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1144737145}
+  - component: {fileID: 1144737144}
+  m_Layer: 0
+  m_Name: SettingsConfig
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1144737144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144737143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 793da87344c18488aadae387bd51ede0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::SettingsConfig
+  audioMixer: {fileID: 24100000, guid: bb90c40dd90394aa29e7eabcdc92ccfd, type: 2}
+  resolutionDropdown: {fileID: 1102333418}
+--- !u!4 &1144737145
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144737143}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 13.68283, y: -33.41636, z: 19.51472}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1225501394
 GameObject:
   m_ObjectHideFlags: 0
@@ -4438,7 +4469,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 873445303}
+      - m_Target: {fileID: 1144737144}
         m_TargetAssemblyTypeName: SettingsConfig, Assembly-CSharp
         m_MethodName: SetVolume
         m_Mode: 0
@@ -5227,6 +5258,9 @@ MonoBehaviour:
   m_MultiSelect: 0
   m_Options:
     m_Options:
+    - m_Text: Ultra
+      m_Image: {fileID: 0}
+      m_Color: {r: 1, g: 1, b: 1, a: 1}
     - m_Text: High
       m_Image: {fileID: 0}
       m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -5239,7 +5273,7 @@ MonoBehaviour:
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 873445303}
+      - m_Target: {fileID: 1144737144}
         m_TargetAssemblyTypeName: SettingsConfig, Assembly-CSharp
         m_MethodName: SetQuality
         m_Mode: 0
@@ -5458,7 +5492,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: High
+  m_text: Ultra
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5782,3 +5816,4 @@ SceneRoots:
   - {fileID: 1408739685}
   - {fileID: 1531309364}
   - {fileID: 513455889}
+  - {fileID: 1144737145}

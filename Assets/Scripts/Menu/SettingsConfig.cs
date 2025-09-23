@@ -12,6 +12,7 @@ public class SettingsConfig : MonoBehaviour
     Resolution[] resolutions;
     
     // NOTE RESOLUTION AND FULLSCREEN SETTINGS WILL NOT SHOW UNLESS GAME IS BUILT
+    // Todo: Currently settings do not save to the next scene (aka they do not persist)
 
     private void Start()
     {
@@ -42,21 +43,25 @@ public class SettingsConfig : MonoBehaviour
     public void SetVolume(float volume)
     {
         audioMixer.SetFloat("volume", volume);
+        PlayerPrefs.SetFloat("Volume", volume);
     }
 
     public void SetQuality(int qualityIndex)
     {
         QualitySettings.SetQualityLevel(qualityIndex);
+        PlayerPrefs.SetInt("Quality", qualityIndex);
     }
 
     public void SetResolution(int resolutionIndex)
     {
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+        PlayerPrefs.SetInt("Resolution", resolutionIndex);
     }
 
     public void SetFullscreen(bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
+        PlayerPrefs.SetInt("Fullscreen", isFullscreen ? 1 : 0);
     }
 }
